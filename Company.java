@@ -1,16 +1,17 @@
+import employees.Employee;
+import employees.Manager;
+import employees.Worker;
+
 public class Company{
     public static void main(String[] args){
         Employee [] employees = new Employee[5];
 
-        employees[0] = new Employee("Damian Kowalski", 4500);
-        employees[1] = new Employee("Jan Nowak", 5700);
+        employees[0] = new Manager("Kowalski", 76000, 0);
+        employees[1] = new Worker("Jan Nowak", 5700 , "Worker");
         employees[2] = new Employee("Marek M", 2100);
         employees[3] = new Employee("Hubert W", 9000);
-        employees[4] = new Employee(" Bob", 7600);
+        employees[4] = new Worker(" Bob", 7600, "Worker");
 
-        System.out.println("PRacownik 3:" + employees[3]);
-
-        employees[3].setSalary(25000);
 
         System.err.println("Wszyscy pracownicy:");
 
